@@ -1,0 +1,16 @@
+ 
+<div>
+    <h2>Formularios</h2>
+    <div *ngFor="let cabecera of formularios">
+      <button (click)="showDetalles(cabecera.idFormulario)">{{ cabecera.nombreFormulario }}</button>
+    </div>
+  
+    
+      <h2>Campos</h2>
+      <ul>
+        <li *ngFor="let campo of campos">
+            {{ campo.nombreCampo }}
+          </li>
+      </ul>
+    
+  </div>
